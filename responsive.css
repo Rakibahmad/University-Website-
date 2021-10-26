@@ -1,0 +1,57 @@
+@media screen and (max-width:700px) {
+    .header-text h1{
+        font-size: 24px;   
+    }
+    .header-text p{
+          font-size: 11px;
+    }
+    .nav-link ul li{
+        display: block;
+        margin-top: 30px;
+        margin-left: 20px;
+        padding: 0px;
+    }
+    
+    .nav-link{
+        background-color: salmon;
+        height: 100vh;
+        width: 200px;
+        text-align: left;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .hidemenu,
+     nav .showmenu{
+    display: block;
+    width: 30px;
+    padding: 6px;
+    
+     }
+
+.row{
+    flex-direction: column;
+    padding: 20px;
+    
+    
+}
+
+.t-col{
+    margin: 10px;
+}
+.campus-col{
+    margin:10px;
+}
+
+/* start testi*/
+.testi-col{
+    margin: 10px;
+}
+/* start enroll*/
+.enroll h3{
+    font-size: 16px;
+}
+
+}

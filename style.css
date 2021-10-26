@@ -1,0 +1,374 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(2, 0, 36, 0.795) 0%, rgba(0, 0, 0, 0.596) 100%), url(img/University-background.png); 
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+nav{
+    display: flex;
+    padding:0% 7% ;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+nav img{
+    width: 160px;
+}
+
+.nav-link{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-link ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav-link ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+.nav-link ul li::after{
+    content: " " ;
+    width: 00%;
+    height: 2px;
+    background-color: rgb(1, 192, 192);
+    display: block;
+    transition: 0.6s;
+}
+
+.nav-link ul li:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    color: white;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+
+.header-text h1{
+    font-size: 60px;
+
+}
+
+.header-text p{
+    margin: 10px 0px  40px;
+    font-size: 13px;
+}
+
+.header-text a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    border: 1px solid white;
+    padding: 12px 26px;
+    cursor: pointer;
+}
+
+.header-text a:hover{
+    border: 1px solid rgb(245, 132, 120);
+    background-color: rgb(245, 132, 120);
+    transition: 1s;
+}
+
+nav .hidemenu,
+nav .showmenu{
+    display: none;
+}
+
+/* start courser*/
+
+.cousers-head{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.cousers-head h3{
+    font-size: 40px;
+    color: black;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.cousers-head p{
+    font-size: 16px;
+    color: rgb(68, 68, 68);
+    margin-bottom: 10px;
+}
+
+.row{
+    margin: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.t-col h3{
+    padding-bottom: 15px;
+}
+
+.t-col p{
+    font-size: 16px;
+    color: rgb(68, 68, 68);
+}
+
+.t-col{
+    flex-basis: 31%;
+    background-color: rgb(252, 237, 220);
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 10px 20px;   
+}
+
+.t-col:hover{
+    box-shadow: 0px 0px 20px 0px rgba(99, 99, 99, 0.555);
+    transition: 0.6s;
+}
+
+/* start campus*/
+.campus{
+    width: 80%;
+    margin: 0 auto;
+    text-align:  center;
+    margin-top: 20px;
+}
+
+.campus h3{
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-weight: 600;
+
+}
+
+.campus p{
+    font-size: 16px;
+    color: rgb(68, 68, 68);
+}
+
+.campus-col{
+    flex-basis: 32%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    
+    
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+    
+    
+}
+
+.layer{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.layer h3{
+    width: 100%;
+    padding-bottom: 20px;
+    opacity: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    color: white;
+    
+}
+
+.layer:hover{
+    background-color: rgba(245, 29, 0, 0.705);
+}
+
+.layer:hover h3{
+    opacity: 1;
+    transition: 0.4s;
+    bottom: 49%;
+}
+
+/* feci start*/
+.feci{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.feci h3{
+    font-size: 40px;
+    padding-bottom: 15px;
+    
+    margin:0 auto;
+
+
+}
+.feci p{
+    font-size: 16px;
+    color: rgb(68, 68, 68);
+    padding-top: 10px;
+}
+
+.fecoi-col{
+    flex-basis: 31%;
+    width: 100%;
+}
+.fecoi-col img{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+.fecoi-col h3{
+    margin-top: 15px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.fecoi-col p{
+    text-align: left;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    color: rgb(68, 68, 68);
+}
+
+/* start testi*/
+.testimoni{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+.testimoni h3{
+    
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.testimoni p{
+    font-size: 16px;
+    color: rgb(68, 68, 68);
+    padding-bottom: 15px;
+}
+.testi-col{
+    flex-basis: 45%;
+    text-align: left;
+    display: block;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(245, 223, 195);
+}
+.testi-col img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 0px;
+    margin-right: 5px;
+    
+}
+
+.testi-col p{
+    padding: 0;
+}
+
+.testi-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+
+.enroll{
+    margin: 100px auto;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.479)), url(img/enroll.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    padding: 100px 0px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.enroll h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.enroll .poke{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;   
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.enroll .poke:hover{
+    border: 1px solid yellow;
+    background: yellow;
+    transition: 1s;
+    color: black;
+}
+
+/* about last start */
+
+.aboutlast{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.aboutlast h4{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.aboutlast p{
+    font-size: 14px;
+    color: rgb(68, 68, 68) ;
+    margin-bottom: 30px;
+}
+
+.abouticon  {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.abouticon img{
+    width: 30px;
+    padding: 6px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+}
+
